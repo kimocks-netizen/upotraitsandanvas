@@ -1,0 +1,203 @@
+/**-----------------------------------------------------------------------------------
+Template Name: Profit Visionary
+Description: This is html5 template
+Author: Bryne Kimocks
+Author URI: http://www.profitvisionary.com
+Version: 1.0
+-----------------------------------------------------------------------------------
+
+****************STYLE 6****************
+15. Blog-Area
+16. Count-Box
+17. Footer-Area
+18. Preloader
+
+
+-- 15. Blog-Area --*/
+
+.blog-box {
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-box .blog-details {
+    padding: 30px;
+    color: #ffffff;
+    background: #f6a17a;
+    background: -webkit-gradient(linear, left top, right top, from(#f6a17a), to(#fce1d4));
+    background: linear-gradient(to right, #f6a17a 0%, #fce1d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a17a', endColorstr='#fce1d4', GradientType=1);
+}
+
+.blog-box .blog-image img {
+    width: 100%;
+}
+
+.blog-box .blog-details h4 a {
+    color: #ffffff;
+}
+
+.blog-list {
+    margin-bottom: 30px;
+}
+
+.blog-list:last-child {
+    margin-bottom: 0;
+}
+
+.blog-list:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.blog-list .blog-list-image {
+    width: 130px;
+    height: 130px;
+    float: left;
+    margin-right: 30px;
+}
+
+.blog-list .blog-list-meta {
+    margin-bottom: 10px;
+}
+
+
+/*-- 16. Count-Box --*/
+
+.count-box {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.count-box .count-icon {
+    display: block;
+    position: relative;
+    font-size: 40px;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    margin: auto auto 20px auto;
+    background: #f6a17a;
+    background: -webkit-gradient(linear, left top, right top, from(#f6a17a), to(#fce1d4));
+    background: linear-gradient(to right, #f6a17a 0%, #fce1d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a17a', endColorstr='#fce1d4', GradientType=1);
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.count-box .count-icon i.icofont {
+    background: -webkit-linear-gradient(#fce1d4, #f6a17a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.count-box .count-icon:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -40%;
+    margin-top: -40%;
+    width: 80%;
+    height: 80%;
+    background-color: #ffffff;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.count-box .count_title {
+    display: block;
+    font-size: 18px;
+    color: #4f4f4f;
+}
+
+.count-box .count {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+/*-- 17. Footer-Area --*/
+
+.footer-single ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-single ul li {
+    padding: 5px 0;
+}
+
+.footer-single ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-area .social-menu a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.footer-area .footer-bottom .copyright {
+    border-top: 1px solid #f2f2f2;
+    text-align: center;
+    padding: 30px;
+}
+
+/*-- 18. Preloader --*/
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f6a17a;
+    background: -webkit-gradient(linear, left top, right top, from(#f6a17a), to(#fce1d4));
+    background: linear-gradient(to right, #f6a17a 0%, #fce1d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a17a', endColorstr='#fce1d4', GradientType=1);
+    z-index: 999999;
+}
+
+.spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-color: #ffffff;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}

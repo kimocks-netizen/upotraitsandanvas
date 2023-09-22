@@ -1,0 +1,146 @@
+/**-----------------------------------------------------------------------------------
+Template Name: Profit Visionary
+Description: This is html5 template
+Author: Bryne Kimocks
+Author URI: http://www.profitvisionary.com
+Version: 1.0
+-----------------------------------------------------------------------------------
+
+****************STYLE 9****************
+23. Contact-Area
+
+
+/*-- 23. Contact-Area --*/
+
+.contact-area {
+    position: relative;
+    z-index: 1;
+    padding: 100px 0;
+    margin-bottom: -250px;
+}
+
+.contact-area:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1370px;
+    max-width: 98%;
+    height: 100%;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="number"],
+.contact-form input[type="email"],
+.contact-form input[type="password"],
+.contact-form textarea {
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #e8e8e8;
+    outline: none;
+}
+
+.contact-form .form-double input[type="text"],
+.contact-form .form-double input[type="number"],
+.contact-form .form-double input[type="email"],
+.contact-form .form-double input[type="password"],
+.contact-form .form-double textarea {
+    width: calc(50% - 15px);
+    float: left;
+}
+
+.contact-form .form-double input[type="text"]:last-child,
+.contact-form .form-double input[type="number"]:last-child,
+.contact-form .form-double input[type="email"]:last-child,
+.contact-form .form-double input[type="password"]:last-child,
+.contact-form .form-double textarea {
+    float: right;
+}
+
+.contact-info {
+    padding: 30px 50px;
+    color: #ffffff;
+    background: #f6a17a;
+    background: -webkit-gradient(linear, left top, right top, from(#f6a17a), to(#fce1d4));
+    background: linear-gradient(to right, #f6a17a 0%, #fce1d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a17a', endColorstr='#fce1d4', GradientType=1);
+    border-radius: 3px;
+}
+
+.contact-info .info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+}
+
+
+.contact-info .info li {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 60px;
+    line-height: 2.3em;
+}
+
+.contact-info .info li:last-child {
+    margin-bottom: 0;
+}
+
+.contact-info .info li .info-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.contact-info .info li .info-icon i.icofont {
+    background: -webkit-linear-gradient(#f6a17a, #fce1d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social-menu-2 a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 0 10px;
+    -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1);
+}
+
+.social-menu-2 a:hover {
+    -webkit-box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.8);
+}
+
+.social-menu-2 a i.icofont {
+    background: -webkit-linear-gradient(#f6a17a, #fce1d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#maps {
+    width: 100%;
+    height: 600px;
+}

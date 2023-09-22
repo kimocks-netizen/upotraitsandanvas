@@ -1,0 +1,106 @@
+/**-----------------------------------------------------------------------------------
+Template Name: Profit Visionary
+Description: This is html5 template
+Author: Bryne Kimocks
+Author URI: http://www.profitvisionary.com
+Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/****************STYLE 2****************
+5. Mainmenu-Area
+
+
+
+/*-- 5. Mainmenu-Area --*/
+
+.mainmenu-area {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site2 .mainmenu-area,
+.mainmenu-area.affix {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.mainmenu-area #mainmenu ul.nav.navbar-nav li a {
+    color: #ffffff;
+    background: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+}
+
+.mainmenu-area #mainmenu ul.nav.navbar-nav li {
+    float: none;
+    display: inline-block;
+}
+
+.mainmenu-area #mainmenu ul.nav.navbar-nav.primary-menu li.active a,
+.mainmenu-area #mainmenu ul.nav.navbar-nav.primary-menu li a:hover {
+    border-bottom: 2px solid #f6a17a; /*e8e8e8*/
+}
+
+
+.mainmenu-area #mainmenu ul.nav.navbar-nav li.select-cuntry select {
+    background: none;
+    border: none;
+    color: #ffffff;
+    padding: 0 15px 0 15px;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    border-left: 1px solid #ffffff;
+}
+
+.mainmenu-area #mainmenu ul.nav.navbar-nav li.select-cuntry select option {
+    color: #f7c336;
+}
+
+.mainmenu-area #search-box {
+    width: 100%;
+}
+
+
+@-webkit-keyframes downup {
+    from {
+        bottom: 60px
+    }
+    to {
+        bottom: 40px
+    }
+}
+
+
+@keyframes downup {
+    from {
+        bottom: 60px
+    }
+    to {
+        bottom: 40px
+    }
+}
+
+a.scrolldown {
+    position: absolute;
+    left: 50%;
+    bottom: 50px;
+    z-index: 2;
+    color: #ffffff;
+    font-size: 30px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-animation: downup 0.8s ease 0.3s infinite alternate;
+    animation: downup 0.8s ease 0.3s infinite alternate;
+}

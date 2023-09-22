@@ -1,0 +1,141 @@
+/**-----------------------------------------------------------------------------------
+Template Name: Profit Visionary
+Description: This is html5 template
+Author: Bryne Kimocks
+Author URI: http://www.profitvisionary.com
+Version: 1.0
+-----------------------------------------------------------------------------------
+
+****************STYLE 7****************
+19. Accordion-style
+20. Service-Box-Style
+21. process-area
+
+
+/*-- 19. Accordion-style --*/
+
+.accordion1 .panel {
+    margin-bottom: 30px;
+}
+
+.accordion1 .panel a {
+    display: block;
+    padding: 8px 10px 8px 70px;
+    position: relative;
+    border: 1px solid #e2e2e2;
+    color: #4f4f4f;
+    font-size: 16px;
+}
+
+.accordion1 .panel:last-child {
+    margin-bottom: 0;
+}
+
+.accordion1 .panel a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    background: #f6a17a;
+    background: -webkit-gradient(linear, left top, right top, from(#f6a17a), to(#fce1d4));
+    background: linear-gradient(to right, #f6a17a 0%, #fce1d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a17a', endColorstr='#fce1d4', GradientType=1);
+}
+
+.accordion1 .panel a:after {
+    content: "\f0a5";
+    font-family: 'icofont';
+    line-height: 40px;
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+}
+
+.accordion1 .panel a[aria-expanded="true"]:after {
+    content: '\f074';
+    font-size: 20px;
+}
+
+.accordion1 .panel .text-body {
+    padding: 30px 30px 30px 70px;
+    border: 1px solid #e2e2e2;
+    border-top: none;
+}
+
+/*-- 20. Service-Box-Style --*/
+
+.service-box {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 0 0 0 rgba(108, 50, 23, 0.2);
+    box-shadow: 0 0 0 0 rgba(108, 50, 23, 0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.service-box:hover {
+    -webkit-box-shadow: 0 0 30px 0 rgba(108, 50, 23, 0.2);
+    box-shadow: 0 0 30px 0 rgba(108, 50, 23, 0.2);
+}
+
+.service-box .box-image {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+}
+
+.service-box .box-image img {
+    width: 100%;
+}
+
+.service-box .box-image .box-plus {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    color: #6b6d6f;
+    line-height: 30px;
+    -webkit-box-shadow: 0 0 30px 0 rgba(108, 50, 23, 0.4);
+    box-shadow: 0 0 30px 0 rgba(108, 50, 23, 0.4);
+}
+
+.service-box .box-text {
+    padding: 0 20px;
+}
+
+/*-- 21. process-area --*/
+
+.process {
+    background: url('image/service-line.jpg') no-repeat scroll top 20px center;
+    color: #6b6d6f;
+}
+
+.single-process .process-icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+}
+
+.single-process .process-icon i.icofont {
+    background: -webkit-linear-gradient(#f6a17a, #fce1d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

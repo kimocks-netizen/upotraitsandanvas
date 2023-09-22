@@ -1,0 +1,213 @@
+/**-----------------------------------------------------------------------------------
+Template Name: Profit Visionary
+Description: This is html5 template
+Author: Bryne Kimocks
+Author URI: http://www.profitvisionary.com
+Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/****************STYLE 3****************
+6. Header-Area
+7. Vdieo-Box
+8. Tabs-list
+9. Feature-Box
+10.Easy Pie Chart*/
+
+
+/*-- 6. Header-Area --*/
+
+.header-area {
+    position: relative;
+    background: url('image/bg2.jpg') no-repeat scroll center center / cover;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #000000;
+    opacity: 0.4;
+}
+
+.site2 .header-area {
+    background-image: url('image/header-bg-2.jpg');
+}
+
+.header-area .header-text .header-title {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.header-area .header-text .header-title .dot {
+    display: inline-block;
+    border: 5px solid #ffffff;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #f6a17a; /*f6a17a*/
+    background: -webkit-gradient(linear, left top, right top, from(#f6a17a), to(#fce1d4));
+    background: linear-gradient(to right, #f6a17a 0%, #fce1d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a17a', endColorstr='#fce1d4', GradientType=1);
+}
+
+.header-area .header-text {
+    color: #ffffff;
+}
+
+.header-area .header-text q {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 50px;
+}
+
+/*-- 7. Vdieo-Box --*/
+
+.video-box {
+    position: relative;
+}
+
+.video-box .video-bttn {
+    position: absolute;
+    left: 55%;
+    top: 32%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%);
+}
+
+/*-- 8. Tabs-list --*/
+
+.tabs-list-2,
+.tabs-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.tabs-list-2 li,
+.tabs-list li {
+    float: left;
+}
+
+.tabs-list-2 li a,
+.tabs-list li a {
+    padding: 15px;
+    border-bottom: 2px solid #bdbdbd;
+    font-weight: 500;
+    display: block;
+}
+
+.tabs-list li.active a {
+    border-bottom: 2px solid #f6a17a;
+}
+
+.tabs-list-2 li a {
+    border: none;
+    border-radius: 100px;
+    overflow: hidden;
+    padding: 8px 20px;
+}
+
+.tabs-list-2 li.active a {
+    color: #ffffff;
+    background: #f6a17a;
+    background: -webkit-gradient(linear, left top, right top, from(#f6a17a), to(#fce1d4));
+    background: linear-gradient(to right, #f6a17a 0%, #fce1d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a17a', endColorstr='#fce1d4', GradientType=1);
+}
+
+/*-- 9. Feature-Box --*/
+
+.count-box,
+.feature-box {
+    padding: 30px;
+    -webkit-box-shadow: 0 0 0 0 rgba(108, 50, 23, 0.4);
+    box-shadow: 0 0 0 0 rgba(108, 50, 23, 0.4);
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.count-box:hover,
+.feature-box:hover {
+    -webkit-box-shadow: 0 0 30px 0 rgba(108, 50, 23, 0.2);
+    box-shadow: 0 0 30px 0 rgba(108, 50, 23, 0.2);
+}
+
+.feature-box .box-icon {
+    float: left;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: -webkit-linear-gradient(#f6a17a, #fce1d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.read-more {
+    color: #bdbdbd;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.read-more:after {
+    content: "\eb55";
+    display: inline-block;
+    font-family: "icofont";
+    color: #f6a17a; /*light blue*/
+    font-size: 22px;
+    -webkit-transform: translate(0, 3px);
+    transform: translate(0, 3px);
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.read-more:hover:after {
+    opacity: 1;
+    -webkit-transform: translate(3px, 3px);
+    transform: translate(3px, 3px);
+}
+
+/*-- 10.Easy Pie Chart --*/
+
+.skills .skill {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skills .skill .chart {
+    position: relative;
+}
+
+.skills .skill .chart > span {
+    position: absolute;
+    left: 50%;
+    top: 27%;
+    font-weight: 600;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%)
+}
+
+.skill .counter:after {
+    content: "%";
+}

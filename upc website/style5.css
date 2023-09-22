@@ -1,0 +1,300 @@
+/**-----------------------------------------------------------------------------------
+Template Name: Profit Visionary
+Description: This is html5 template
+Author: Bryne Kimocks
+Author URI: http://www.profitvisionary.com
+Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+/****************STYLE 5****************
+13. Team-Area
+14. Price-box
+
+/*-- 13. Team-Area --*/
+
+.team-box {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.team-box .team-image img {
+    width: 100%;
+}
+
+.team-hover {
+    padding: 20px;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: #ffffff;
+    -webkit-transition: 0.6s;
+    transition: 0.6s;
+}
+
+.team-box.two .team-hover {
+    height: auto;
+    top: auto;
+    bottom: -100%;
+}
+
+.team-box:hover .team-hover {
+    top: 0;
+}
+
+.team-box.two:hover .team-hover {
+    top: auto;
+    bottom: 0;
+}
+
+.team-hover .team-social-menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.team-hover .team-social-menu a {
+    border-right: 1px solid #ededed;
+    padding: 5px 15px;
+    display: inline-block;
+    font-size: 18px;
+    background: -webkit-linear-gradient(#f6a17a, #fce1d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.team-hover .team-social-menu a:last-child {
+    border-right: none;
+}
+
+.team-hover .t_sub_title,
+.team-hover .t_title {
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.team-hover .t_title {
+    font-size: 18px;
+}
+
+.team-hover .t_sub_title {
+    margin-bottom: 20px;
+}
+
+
+.team-hover:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fce1d4;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fce1d4), to(#f6a17a));
+    background: linear-gradient(to bottom, #fce1d4 1%, #f6a17a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fce1d4', endColorstr='#f6a17a', GradientType=0);
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.team-box.two .team-hover:before {
+    opacity: 1;
+}
+
+.team-hover .bar_group {
+    position: relative;
+}
+
+.team-hover .bar_group__bar.thick {
+    width: 0%;
+    height: 3px;
+    border-radius: 6px;
+    background: #fff;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    z-index: 1;
+    margin-bottom: 30px !important;
+}
+
+.team-hover .bar_group__bar.thick::after {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+    width: 95%;
+    height: 3px;
+    border-radius: 6px;
+    background: #e4e2e2;
+    z-index: -1;
+}
+
+.team-hover .b_tooltip {
+    position: relative;
+    float: left;
+    left: 100%;
+    padding: 5px 5px 3px 5px;
+    background-color: #ffffff;
+    color: #6b6d6f;
+    -webkit-transform: translateX(-50%) translateY(-30px);
+    transform: translateX(-50%) translateY(-30px);
+    border-radius: 2px;
+    line-height: 1em;
+}
+
+.team-hover .b_tooltip:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0;
+    bottom: -5px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #ffffff;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.team-hover .b_tooltip span:after {
+    content: "%";
+}
+
+.team-hover .bar_label_min,
+.team-hover .bar_label_max {
+    display: none;
+}
+
+.team-hover .bar_group .b_label {
+    font-size: 16px;
+}
+
+
+/*-- 14. Price-box --*/
+
+.prices [class|='col'] {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.price-tabs {
+    margin: 0 0 40px 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.price-tabs li {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.price-tabs li:after {
+    content: "/";
+}
+
+.price-tabs li:last-child:after {
+    content: "";
+}
+
+.price-tabs li a {
+    color: #898989;
+}
+
+.price-tabs li.active a {
+    color: #4f4f4f;
+}
+
+.price-tabs li a {
+    padding: 5px 10px;
+}
+
+.price-box {
+    padding: 50px 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.price-box:hover {
+    padding: 60px 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 5px;
+    position: relative;
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+    z-index: 9;
+}
+
+.price-box .amount {
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.price-box .amount span {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.price-box .price-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 60px;
+}
+
+.price-box .price-list li {
+    padding: 5px 0;
+}
+
+.price-box .price-list li:before {
+    content: '\efac';
+    font-family: 'icofont';
+    margin-right: 5px;
+}
+
+.price-box .bttn {
+    z-index: 1;
+}
+
+.price-box .bttn:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #f6a17a;
+    background: -webkit-gradient(linear, left top, right top, from(#f6a17a), to(#fce1d4));
+    background: linear-gradient(to right, #f6a17a 0%, #fce1d4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6a17a', endColorstr='#fce1d4', GradientType=1);
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s
+}
+
+.price-box .bttn:hover:before {
+    opacity: 1;
+}
+
+.price-box .bttn:hover {
+    -webkit-box-shadow: 0 5px 0 0 rgba(123, 44, 8, 0.5), 0 10px 0 0 rgba(123, 44, 8, 0.5);
+    box-shadow: 0 5px 0 0 rgba(123, 44, 8, 0.5), 0 10px 0 0 rgba(123, 44, 8, 0.5);
+}
