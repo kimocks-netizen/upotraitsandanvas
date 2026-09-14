@@ -28,7 +28,7 @@ Version: 1.0
 
 .site2 .mainmenu-area,
 .mainmenu-area.affix {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 .mainmenu-area #mainmenu ul.nav.navbar-nav li a {

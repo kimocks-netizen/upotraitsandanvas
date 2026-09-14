@@ -1,3 +1,14 @@
+@media only screen and (max-width: 767px) {
+    #home-area {
+        flex-direction: column;
+        min-height: auto;
+    }
+    #home-area > div {
+        flex: 1 1 100% !important;
+        min-height: 50vh;
+    }
+}
+
 /* Medium Layout: 1280px. */
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {

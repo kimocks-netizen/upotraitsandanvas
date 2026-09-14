@@ -80,8 +80,9 @@
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="mainmenu">
                         <ul class="nav navbar-nav navbar-right help-menu">
-                            <li><a href="whatsapp://send?phone=+263777123887&text=Hello, I want to enquire more about Canvas & Potraits"><i class="icofont icofont-user-alt-4"></i></a></li>
+                            <li><a href="whatsapp://send?phone=+27606583828&text=Hello, I want to enquire more about Canvas & Potraits"><i class="icofont icofont-user-alt-4"></i></a></li>
                             <li><a href="#search-box" data-toggle="collapse"><i class="icofont icofont-search-alt-2"></i></a></li>
+                            <li><a href="#" id="cart-btn" onclick="toggleCart(); return false;" style="position:relative;"><i class="icofont icofont-cart"></i><span id="cart-count" style="position:absolute;top:-6px;right:-8px;background:#e74c3c;color:#fff;border-radius:50%;font-size:10px;width:16px;height:16px;display:none;align-items:center;justify-content:center;">0</span></a></li>
                             <li class="select-cuntry">
                                 <select name="counter" id="counter">
                                     <option value="ENG">ENG</option>
@@ -107,20 +108,75 @@
     <!-- Mainmenu-Area-/ -->
 
 
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" style="display:none;position:fixed;top:0;right:0;width:340px;height:100%;background:#fff;z-index:9999;box-shadow:-4px 0 15px rgba(0,0,0,0.2);overflow-y:auto;padding:20px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;">
+            <h4 style="margin:0;">Your Cart</h4>
+            <button onclick="toggleCart()" style="background:none;border:none;font-size:20px;cursor:pointer;">&times;</button>
+        </div>
+        <div id="cart-items"></div>
+        <div id="cart-total" style="margin-top:15px;font-weight:bold;font-size:16px;"></div>
+        <div id="cart-checkout" style="margin-top:15px;display:none;">
+            <div style="background:#fff8f0;border-left:3px solid #f6a17a;padding:10px 12px;margin-bottom:15px;font-size:12px;color:#555;">
+                <i class="icofont icofont-delivery-time" style="color:#f6a17a;"></i>
+                We make &amp; deliver your order. <strong>You only pay on delivery once satisfied.</strong>
+            </div>
+            <div id="cart-form">
+                <input id="cf-name" type="text" placeholder="Full Name *" style="width:100%;padding:9px 12px;margin-bottom:8px;border:1px solid #ddd;border-radius:4px;font-size:13px;">
+                <input id="cf-email" type="email" placeholder="Email Address *" style="width:100%;padding:9px 12px;margin-bottom:8px;border:1px solid #ddd;border-radius:4px;font-size:13px;">
+                <input id="cf-phone" type="tel" placeholder="Phone Number *" style="width:100%;padding:9px 12px;margin-bottom:8px;border:1px solid #ddd;border-radius:4px;font-size:13px;">
+                <input id="cf-address" type="text" placeholder="Delivery Address *" style="width:100%;padding:9px 12px;margin-bottom:12px;border:1px solid #ddd;border-radius:4px;font-size:13px;">
+                <p style="font-size:11px;color:#aaa;margin-bottom:8px;">A <strong>R10 confirmation deposit</strong> is charged via card to secure your order. Remaining balance is paid on delivery.</p>
+                <label style="font-size:11px;color:#555;display:flex;align-items:flex-start;gap:6px;margin-bottom:12px;cursor:pointer;">
+                    <input type="checkbox" id="cf-terms" style="margin-top:3px;flex-shrink:0;">
+                    I agree to the <a href="terms.html" target="_blank" style="color:#f6a17a;">Terms &amp; Conditions</a> and understand I pay the balance on delivery once satisfied.
+                </label>
+                <button onclick="paystackCheckout()" class="bttn bttn-primary" style="width:100%;text-align:center;">Confirm Order</button>
+            </div>
+        </div>
+    </div>
+    <!-- Paystack inline script -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
     <!--Header-Area-->
-    <header class="header-area overlay" id="home-area">
-        <div class="vcenter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-10 col-md-8">
-                        <div class="header-text">
-                            <h3 class="header-title wow fadeInUp">Don't settle for average walls, We paint them
-							<span class="dot"></span><span class="dot"></span><span class="dot"></span></h3>
-                            <div class="wow fadeInUp" data-wow-delay="0.5s"><q>Lets get rid of empty walls</q></div>
-                            <div class="wow fadeInUp" data-wow-delay="0.55s">
-                                <a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I would like to enquire more about Canvas Potraits.. " class="bttn bttn-lg bttn-primary">Contact Now</a> <!--put button action-->
-                            </div>
-                        </div>
+    <header id="home-area" style="display:flex;flex-wrap:wrap;min-height:92vh;">
+        <!-- Left: Hero -->
+        <div class="overlay" style="flex:1 1 55%;background:url('image/bg2.jpg') no-repeat center center/cover;background-attachment:fixed;display:flex;align-items:center;padding:100px 40px 50px;">
+            <div class="header-text">
+                <h3 style="color:#ffffff;font-family:'Roboto',sans-serif;font-size:42px;font-weight:900;letter-spacing:2px;margin-bottom:15px;" class="wow fadeInUp">Don't settle for average walls, We paint them
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span></h3>
+                <div class="wow fadeInUp" data-wow-delay="0.5s"><q style="color:#ffffff;font-size:16px;display:block;margin-bottom:25px;">Lets get rid of empty walls</q></div>
+                <div class="wow fadeInUp" data-wow-delay="0.55s">
+                    <a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I would like to enquire more about Canvas Potraits.. " class="bttn bttn-primary" style="padding:12px 28px;font-size:15px;">Contact Now</a>
+                </div>
+            </div>
+        </div>
+        <!-- Right: How It Works -->
+        <div id="how-it-works" style="flex:1 1 45%;background:url('image/bg2.jpg') no-repeat center center/cover;background-attachment:fixed;position:relative;display:flex;align-items:center;padding:100px 40px 50px;">
+            <div style="position:absolute;inset:0;background:rgba(0,0,0,0.65);"></div>
+            <div style="position:relative;z-index:1;width:100%;">
+            <div style="width:100%;">
+                <h3 style="color:#f6a17a;margin-bottom:8px;font-size:22px;">How It Works</h3>
+                <p style="color:#aaa;margin-bottom:30px;font-size:13px;">Simple steps — no upfront payment needed.</p>
+                <div style="display:flex;align-items:flex-start;margin-bottom:24px;">
+                    <div style="min-width:44px;height:44px;border-radius:50%;background:#f6a17a;display:flex;align-items:center;justify-content:center;font-size:20px;color:#fff;margin-right:16px;"><i class="icofont icofont-cart"></i></div>
+                    <div>
+                        <h5 style="color:#fff;margin:0 0 4px;">1. Select &amp; Add to Cart</h5>
+                        <p style="color:#aaa;margin:0;font-size:13px;">Browse our canvas sizes and add your favourite to the cart.</p>
+                    </div>
+                </div>
+                <div style="display:flex;align-items:flex-start;margin-bottom:24px;">
+                    <div style="min-width:44px;height:44px;border-radius:50%;background:#f6a17a;display:flex;align-items:center;justify-content:center;font-size:20px;color:#fff;margin-right:16px;"><i class="icofont icofont-paint"></i></div>
+                    <div>
+                        <h5 style="color:#fff;margin:0 0 4px;">2. We Make Your Canvas</h5>
+                        <p style="color:#aaa;margin:0;font-size:13px;">Our team crafts your custom portrait with care and precision.</p>
+                    </div>
+                </div>
+                <div style="display:flex;align-items:flex-start;">
+                    <div style="min-width:44px;height:44px;border-radius:50%;background:#f6a17a;display:flex;align-items:center;justify-content:center;font-size:20px;color:#fff;margin-right:16px;"><i class="icofont icofont-delivery-time"></i></div>
+                    <div>
+                        <h5 style="color:#fff;margin:0 0 4px;">3. Delivered — Pay on Satisfaction</h5>
+                        <p style="color:#aaa;margin:0;font-size:13px;">We deliver to your door. <strong style="color:#f6a17a;">Only pay once you are happy.</strong></p>
                     </div>
                 </div>
             </div>
@@ -159,7 +215,7 @@
                             <h4 class="upper thing">ITS ALL ABOUT ART LIFE</h4>
                             <p>For our vision is transforming plan walls into modern walls at an affordable price.</p>
                             <br />
-                            <a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I would like to enquire more about Canvas Potraits.." class="bttn bttn-sm bttn-primary">Contact Us</a>
+                            <a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I would like to enquire more about Canvas Potraits.." class="bttn bttn-sm bttn-primary">Contact Us</a>
                         </div>
                         <div id="our_support" class="tab-pane fade">
                             <h4 class="upper thing">WE SUPPORT YOU IN:</h4>
@@ -172,7 +228,7 @@
                               <li>Wrap & making sure you receive your order in good condition.</li>
 							</ul>
                             <br />
-                            <a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I would like to enquire more about Canvas Potraits.." class="bttn bttn-sm bttn-primary">Get Yours Today</a>
+                            <a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I would like to enquire more about Canvas Potraits.." class="bttn bttn-sm bttn-primary">Get Yours Today</a>
                         </div>
                     </div>
                 </div>
@@ -197,7 +253,7 @@
 							  <li>No wrap AKA White wrap.</li>
 							  
 							</ul>
-                        <a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I would like to enquire about canvas types and examples.." class="read-more">Enquire More</a>
+                        <a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I would like to enquire about canvas types and examples.." class="read-more">Enquire More</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -215,7 +271,7 @@
                               <li>Custom Size Of your choice</li>
 							  
 							</ul>
-                        <a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I would like to enquire your prices for canvas.." class="read-more">Enquire Price</a>
+                        <a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I would like to enquire your prices for canvas.." class="read-more">Enquire Price</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
@@ -232,7 +288,7 @@
 							  <li>Customize Wrap Edging Colour.</li>
 							  
 							</ul>
-                        <a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I would like to enquire about everything customized.." class="read-more">Enquire More</a>
+                        <a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I would like to enquire about everything customized.." class="read-more">Enquire More</a>
                     </div>
                 </div>
             </div>
@@ -555,7 +611,7 @@
                             </div>
                             <div class="team-social-menu">
                                 <a href="https://www.facebook.com/profile.php?id=100092993230511"><i class="icofont icofont-social-facebook"></i></a>
-                                <a href="https://wa.me/c/263777123887"><i class="icofont icofont-social-whatsapp"></i></a>
+                                <a href="https://wa.me/c/27606583828"><i class="icofont icofont-social-whatsapp"></i></a>
                                 <a href="https://instagram.com/ultimate_potraits_and_canvas?igshid=NzZhOTFlYzFmZQ=="><i class="icofont icofont-social-instagram"></i></a>
                             </div>
                         </div>
@@ -580,7 +636,7 @@
                             </div>
                             <div class="team-social-menu">
                                 <a href="https://www.facebook.com/profile.php?id=100092993230511"><i class="icofont icofont-social-facebook"></i></a>
-                                <a href="https://wa.me/c/263777123887"><i class="icofont icofont-social-whatsapp"></i></a>
+                                <a href="https://wa.me/c/27606583828"><i class="icofont icofont-social-whatsapp"></i></a>
                                 <a href="https://instagram.com/ultimate_potraits_and_canvas?igshid=NzZhOTFlYzFmZQ=="><i class="icofont icofont-social-instagram"></i></a>
                             </div>
                         </div>
@@ -610,100 +666,62 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-xs-12">
-                    <ul class="price-tabs">
-                        <li class="active"><a data-toggle="pill" href="#monthly">Per Canvas</a></li>
-                        <li><a data-toggle="pill" href="#yearly">On Promotion</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row prices tab-content">
-                <div id="monthly" class="tab-pane fade in active">
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="price-box">
-                            <h4>A4 Potrait</h4>
-                            <h3 class="amount">$10 /<span>Item</span></h3>
-                            <ul class="price-list">
-                                <li>Picture Of your choice</li>
-                                <li>1 or 2 cm Thickeness</li>
-                                <li>Free local delivery</li>
-                                <li>Edging: full, half or solid wrap</li>
-                                <li>Free Packaging</li>
-                            </ul>
-                            <a href="tel:+263777123887" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
-                        <div class="price-box active">
-                            <h4>A3 Potrait</h4>
-                            <h3 class="amount">$20 /<span>Item</span></h3>
-                            <ul class="price-list">
-                                <li>Picture Of your choice</li>
-                                <li>2 cm Thickeness</li>
-                                <li>Free local delivery</li>
-                                <li>Edging: full, half or solid wrap</li>
-                                <li>Free Packaging</li>
-                            </ul>
-                            <a href="tel:+263777123887" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.6s">
-                        <div class="price-box">
-                            <h4>A2 Potrait</h4>
-                            <h3 class="amount">$30 /<span>Item</span></h3>
-                            <ul class="price-list">
-                                <li>Picture Of your choice</li>
-                                <li>2-3 cm Thickeness</li>
-                                <li>Free international delivery on more items</li>
-                                <li>Edging: full, half or solid wrap</li>
-                                <li>Free Packaging</li>
-                            </ul>
-                            <a href="tel:+263777123887" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
-                        <div class="price-box">
-                            <h4>A1 Potrait</h4>
-                            <h3 class="amount">$50 /<span>Item</span></h3>
-                            <ul class="price-list">
-                                <li>Picture Of your choice</li>
-                                <li>3 cm Thickeness</li>
-                                <li>Free international delivery on more items</li>
-                                <li>Edging: full, half or solid wrap</li>
-                                <li>Free Packaging</li>
-                            </ul>
-                            <a href="tel:+263777123887" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
+                <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.1s">
+                    <div class="price-box">
+                        <h4>A4 Portrait</h4>
+                        <h3 class="amount">R180 /<span>Item</span></h3>
+                        <ul class="price-list">
+                            <li>Picture of your choice</li>
+                            <li>1 or 2 cm Thickness</li>
+                            <li>Free local delivery</li>
+                            <li>Edging: full, half or solid wrap</li>
+                            <li>Free Packaging</li>
+                        </ul>
+                        <button onclick="addToCart('A4 Portrait', 180)" class="bttn bttn-sm bttn-primary" style="margin-top:8px;width:100%;">Add to Cart</button>
                     </div>
                 </div>
-                <div id="yearly" class="tab-pane fade">
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.1s">
-                        <div class="price-box">
-                            <h4>A0 Size</h4>
-                            <h3 class="amount">$60 /<span>Item</span></h3>
-                            <ul class="price-list">
-                                <li>Everything on A1 plus:</li>
-                                <li>Discount on delivery</li>
-								<li>Free T Shirts On more Orders</li>
-                                <li>Or Free Cap</li>
-                            </ul>
-                            <a href="tel:+263777123887" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
-                    </div>
-                    <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
-                        <div class="price-box">
-                            <h4>Custom Size</h4>
-                            <h3 class="amount">$-- /<span>Item</span></h3>
-                            <ul class="price-list">
-                                <li>Everything on A0 plus:</li>
-                                <li>Free national delivery</li>
-								<li>Discount on your next order</li>
-                            </ul>
-                            <a href="tel:+263777123887" class="bttn bttn-sm bttn-default">Purchase Now</a>
-                        </div>
+                <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="price-box active">
+                        <h4>A3 Portrait</h4>
+                        <h3 class="amount">R350 /<span>Item</span></h3>
+                        <ul class="price-list">
+                            <li>Picture of your choice</li>
+                            <li>2 cm Thickness</li>
+                            <li>Free local delivery</li>
+                            <li>Edging: full, half or solid wrap</li>
+                            <li>Free Packaging</li>
+                        </ul>
+                        <button onclick="addToCart('A3 Portrait', 350)" class="bttn bttn-sm bttn-primary" style="margin-top:8px;width:100%;">Add to Cart</button>
                     </div>
                 </div>
-
+                <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="price-box">
+                        <h4>A2 Portrait</h4>
+                        <h3 class="amount">R550 /<span>Item</span></h3>
+                        <ul class="price-list">
+                            <li>Picture of your choice</li>
+                            <li>2-3 cm Thickness</li>
+                            <li>Free local delivery</li>
+                            <li>Edging: full, half or solid wrap</li>
+                            <li>Free Packaging</li>
+                        </ul>
+                        <button onclick="addToCart('A2 Portrait', 550)" class="bttn bttn-sm bttn-primary" style="margin-top:8px;width:100%;">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="price-box">
+                        <h4>A1 Portrait</h4>
+                        <h3 class="amount">R850 /<span>Item</span></h3>
+                        <ul class="price-list">
+                            <li>Picture of your choice</li>
+                            <li>3 cm Thickness</li>
+                            <li>Free local delivery</li>
+                            <li>Edging: full, half or solid wrap</li>
+                            <li>Free Packaging</li>
+                        </ul>
+                        <button onclick="addToCart('A1 Portrait', 850)" class="bttn bttn-sm bttn-primary" style="margin-top:8px;width:100%;">Add to Cart</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -728,7 +746,7 @@
                             <img src="image/29.jpg" alt="">
                         </div>
                         <div class="blog-details">
-                            <h4><a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I have an event soon and I would like to enquire how best can you make it to be memorable for me? ..">Discounts or free Photoshot on more orders, Valid Until December 2023</a></h4>
+                            <h4><a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I have an event soon and I would like to enquire how best can you make it to be memorable for me? ..">Discounts or free Photoshot on more orders, Valid Until December 2025</a></h4>
                             <p>Get your events like Lobola, Weedings and Family Functions covered with us. We make your events memorable by taking pictures for you and turn your house into an amazing place to vist with Potraits on Walls.</p>
                         </div>
                     </div>
@@ -739,8 +757,8 @@
                             <div class="blog-list-image">
                                 <img src="image/25.jpg" alt="">
                             </div>
-                            <h5><a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I have an event soon and I would like to enquire how best can you make it to be memorable for me? ">Flyer Design</a></h5>
-                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> UNTIL DECEMBER 2023</div>
+                            <h5><a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I have an event soon and I would like to enquire how best can you make it to be memorable for me? ">Flyer Design</a></h5>
+                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> UNTIL DECEMBER 2025</div>
                             <p>We help you in designing your flyers at a discount price.</p>
 								
                         </div>
@@ -748,16 +766,16 @@
                             <div class="blog-list-image">
                                 <img src="image/28.jpg" alt="">
                             </div>
-                            <h5><a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I want to place an order, tell me more?">Photographing</a></h5>
-                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 01 JANUARY 2024</div>
+                            <h5><a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I want to place an order, tell me more?">Photographing</a></h5>
+                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> 01 JANUARY 2025</div>
                             <p>We have massive discounts on photoshot for Weddings, Lobola and other events.</p>
                         </div>
                         <div class="blog-list wow fadeInUp" data-wow-delay="0.6s">
                             <div class="blog-list-image">
                                 <img src="image/26.jpg" alt="">
                             </div>
-                            <h5><a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I want to place an order, tell me more?">Free Items</a></h5>
-                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i>UNTIL DECEMBER 2023</div>
+                            <h5><a href="whatsapp://send?phone=+27606583828&text=Hello, Ultimate Potraits and Canvas, I want to place an order, tell me more?">Free Items</a></h5>
+                            <div class="blog-list-meta"> <i class="icofont icofont-ui-calendar"></i> UNTIL DECEMBER 2025</div>
                             <p>We have a special running until December. Order A1 or more potraits and get a T Shirt or Cap for free.</p>
                         </div>
                     </div>
@@ -818,7 +836,6 @@
                     <div class="col-xs-12">
                         <div class="page-title">
                             <h3 class="bar-title">Contact Now</h3>
-							<p style= "font: Calibri; font:12; text-align:center"><b>We advice you to call us on <a href="tel:+263777123887">+263 77 712 3887 </a></b></p>
                         </div>
                     </div>
                 </div>
@@ -844,14 +861,14 @@
                             <ul class="info">
                                 <li>
                                     <span class="info-icon">
-										 <a href="https://maps.app.goo.gl/FF2EhQBSu58nnfUF8"><i class="icofont  icofont-social-google-map"></i></a>
-                                    </span> Gutu Mupandawana<br /> Masvingo, Zimbabwe<br />0083
+                                        <a href="https://maps.app.goo.gl/irQJ3KnpLp9dwoVn9"><i class="icofont icofont-social-google-map"></i></a>
+                                    </span> Lombardy Meander<br /> Cole Rd &amp; Graham Rd, Shere<br />0084
                                 </li>
                                 <li>
                                     <span  class="info-icon">
-                                       <a href="tel:+26377712388"> <i class="icofont icofont-ui-cell-phone"></i></a>
+                                       <a href="tel:+27606583828"> <i class="icofont icofont-ui-cell-phone"></i></a>
 										
-                                    </span>+263 77 712 3887
+                                    </span>+27 60 658 3828
                                 </li>
                                 <li>
                                     <span class="info-icon">
@@ -861,7 +878,7 @@
                             </ul>
                             <div class="social-menu-2">
                                 <a href="https://www.facebook.com/profile.php?id=100092993230511"><i class="icofont icofont-social-facebook"></i></a>
-                                <a href="https://wa.me/c/263777123887"><i class="icofont icofont-social-whatsapp"></i></a>
+                                <a href="https://wa.me/c/27606583828"><i class="icofont icofont-social-whatsapp"></i></a>
                                 <a href="https://instagram.com/ultimate_potraits_and_canvas?igshid=NzZhOTFlYzFmZQ=="><i class="icofont icofont-social-instagram"></i></a>
                             </div>
                         </div>
@@ -871,16 +888,11 @@
         </div>
     </section>
     <!-- Contact-Area / -->
-    <div class="item"> 
-         
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21630.036488428457!2d31.15870882980123!3d-19.624829968549417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ecd335902a4881f%3A0x91fdcfea6cb03f29!2sMpandawana%2C%20Gutu%2C%20Zimbabwe!5e0!3m2!1sen!2sch!4v1695368751367!5m2!1sen!2sch" width="100%"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="item">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.300459694601!2d28.359337775401475!3d-25.793659877331823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955d4431c60441%3A0xf923734ec48da899!2sLombardy%20Meander!5e0!3m2!1sen!2sza!4v1789374030115!5m2!1sen!2sza" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
     </div>
 
-    <!-- Whatsapp -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="./upc.css">
-    <a href="whatsapp://send?phone=+263777123887&text=Hello, Ultimate Potraits and Canvas, I would like to enquire more about Canvas Potraits.. " class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float"></i>
-    </a>
+
 
     <!-- Footer-Area -->
     <footer class="footer-area">
@@ -893,7 +905,7 @@
                             <p>Ultimate Potraits and Canvas aims on making plan walls to compete with modern walls by decorating their walls with pictures of their e.g toterms and weddings etc.</p>
                             <div class="social-menu">
                                 <a href="https://www.facebook.com/profile.php?id=100092993230511"><i class="icofont icofont-social-facebook"></i></a>
-                                <a href="https://wa.me/c/263777123887"><i class="icofont icofont-social-whatsapp"></i></a>
+                                <a href="https://wa.me/c/27606583828"><i class="icofont icofont-social-whatsapp"></i></a>
                                 <a href="https://instagram.com/ultimate_potraits_and_canvas?igshid=NzZhOTFlYzFmZQ=="><i class="icofont icofont-social-instagram"></i></a>
                             </div>
                         </div>
@@ -923,8 +935,8 @@
                             <h4 class="upper">Resources</h4>
                             <ul>
                                 <li><a href="#contact-area">Support</a></li>
-                                <li><a href="tel:+263777123887">Contact</a></li>
-                                <li><a href="docs/TnCs.pdf">Privacy &amp; Term</a></li>
+                                <li><a href="tel:+27606583828">Contact</a></li>
+                                <li><a href="terms.html">Privacy &amp; Terms</a></li>
                             </ul>
                         </div>
                     </div>
@@ -932,7 +944,7 @@
                         <div class="footer-single">
                             <h4 class="upper">Contact Us</h4>
                             <ul>
-                                <li><a href="tel:+263777123887">Call</a></li>
+                                <li><a href="tel:+27606583828">Call</a></li>
                                 <li><a href="#">Mail</a></li>
                                 <li><a href="#">WhatsApp</a></li>
                             </ul>
@@ -973,6 +985,113 @@
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
+    <script>
+        var cart = JSON.parse(localStorage.getItem('upc_cart') || '[]');
+
+        function saveCart() { localStorage.setItem('upc_cart', JSON.stringify(cart)); }
+
+        function updateCartCount() {
+            var total = cart.reduce(function(s, i) { return s + i.qty; }, 0);
+            var el = document.getElementById('cart-count');
+            el.textContent = total;
+            el.style.display = total > 0 ? 'flex' : 'none';
+        }
+
+        function addToCart(name, price) {
+            var existing = cart.find(function(i) { return i.name === name; });
+            if (existing) { existing.qty++; } else { cart.push({ name: name, price: price, qty: 1 }); }
+            saveCart();
+            updateCartCount();
+            renderCart();
+            document.getElementById('cart-sidebar').style.display = 'block';
+        }
+
+        function removeFromCart(name) {
+            cart = cart.filter(function(i) { return i.name !== name; });
+            saveCart();
+            updateCartCount();
+            renderCart();
+        }
+
+        function renderCart() {
+            var el = document.getElementById('cart-items');
+            var totalEl = document.getElementById('cart-total');
+            var checkoutEl = document.getElementById('cart-checkout');
+            if (cart.length === 0) {
+                el.innerHTML = '<p style="color:#888;">Your cart is empty.</p>';
+                totalEl.innerHTML = '';
+                checkoutEl.style.display = 'none';
+                return;
+            }
+            var html = '';
+            var total = 0;
+            cart.forEach(function(item) {
+                var sub = item.price * item.qty;
+                total += sub;
+                html += '<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid #eee;">';
+                html += '<div><strong>' + item.name + '</strong><br><small>' + item.qty + ' x R' + (item.price > 0 ? item.price : 'TBD') + '</small></div>';
+                html += '<button onclick="removeFromCart(\'' + item.name + '\')" style="background:none;border:none;color:#e74c3c;cursor:pointer;font-size:18px;">&times;</button>';
+                html += '</div>';
+            });
+            el.innerHTML = html;
+            totalEl.innerHTML = 'Total: <span style="color:#f6a17a;">R' + total + '</span>';
+            checkoutEl.style.display = 'block';
+        }
+
+        function paystackCheckout() {
+            var name = document.getElementById('cf-name').value.trim();
+            var email = document.getElementById('cf-email').value.trim();
+            var phone = document.getElementById('cf-phone').value.trim();
+            var address = document.getElementById('cf-address').value.trim();
+            var terms = document.getElementById('cf-terms').checked;
+            if (!name || !email || !phone || !address) {
+                alert('Please fill in all delivery details.');
+                return;
+            }
+            if (!terms) {
+                alert('Please agree to the Terms & Conditions to continue.');
+                return;
+            }
+            var hasCustomOnly = cart.every(function(i) { return i.price === 0; });
+            if (hasCustomOnly) {
+                alert('Custom Size orders require a quote. Please use the Contact section to enquire.');
+                return;
+            }
+            var orderSummary = cart.map(function(i) { return i.qty + 'x ' + i.name; }).join(', ');
+            var handler = PaystackPop.setup({
+                key: 'pk_test_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', // replace with your Paystack public key
+                email: email,
+                amount: 1000, // R10 deposit — 1000 kobo = R10
+                currency: 'ZAR',
+                ref: 'UPC-' + Date.now(),
+                metadata: {
+                    custom_fields: [
+                        { display_name: 'Customer Name', variable_name: 'name', value: name },
+                        { display_name: 'Phone', variable_name: 'phone', value: phone },
+                        { display_name: 'Delivery Address', variable_name: 'address', value: address },
+                        { display_name: 'Order', variable_name: 'order', value: orderSummary }
+                    ]
+                },
+                callback: function(response) {
+                    cart = [];
+                    saveCart();
+                    updateCartCount();
+                    document.getElementById('cart-sidebar').style.display = 'none';
+                    alert('Order confirmed! Reference: ' + response.reference + '\nWe will contact you at ' + phone + ' to arrange delivery.');
+                },
+                onClose: function() {}
+            });
+            handler.openIframe();
+        }
+
+        function toggleCart() {
+            var s = document.getElementById('cart-sidebar');
+            s.style.display = s.style.display === 'none' ? 'block' : 'none';
+            if (s.style.display === 'block') renderCart();
+        }
+
+        updateCartCount();
+    </script>
 
     <!--
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXZ3vJtdK6aKAEWBovZFe4YKj1SGo9V20&callback=initMap"></script>
