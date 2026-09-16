@@ -1,15 +1,15 @@
-# Vula-Pay — Updated Website Content
+# Vula & Pay — Updated Website Content
 
-> **Project:** Vula-Pay Custom Canvas Portraits  
+> **Project:** Vula & Pay Custom Canvas Portraits  
 > **Core idea:** **Open first. Pay only when you are satisfied.**  
-> **Brand meaning:** *Vula* means **open** in Nguni languages. Vula-Pay expresses the promise simply: **Open your order, see the finished product, and then pay.**
+> **Brand meaning:** *Vula* means **open** in Nguni languages. Vula & Pay expresses the promise simply: **Open your order, see the finished product, and then pay.**
 
 ---
 
 ## 1. Brand Positioning
 
 ### Brand Name
-**Vula-Pay**
+**Vula & Pay**
 
 ### Primary Brand Promise
 **Open it. Love it. Pay.**
@@ -24,13 +24,13 @@
 **Your memories on canvas — delivered first, paid for only after you are happy.**
 
 ### Brand Story
-Vula-Pay is built around trust.
+Vula & Pay is built around trust.
 
 We create personalised canvas portraits from the photographs and memories that matter to you. Instead of asking you to pay for a custom product before seeing the finished result, we do things differently.
 
 We make your order, deliver it to your door, and let you open and inspect it first. If you are happy with what we have made, you pay. If you have changed your mind or are not satisfied, we take it back at no cost to you.
 
-That is the idea behind **Vula-Pay: Open & Pay.**
+That is the idea behind **Vula & Pay: Open & Pay.**
 
 ---
 
@@ -40,7 +40,7 @@ Use a simpler navigation focused on ordering rather than the old corporate-style
 
 - **Home**
 - **How It Works**
-- **Why Vula-Pay**
+- **Why Vula & Pay**
 - **Canvas Options**
 - **Our Work**
 - **Prices**
@@ -114,13 +114,13 @@ You do not pay the balance until you have opened the product and are satisfied w
 
 ---
 
-# 5. Why Vula-Pay
+# 5. Why Vula & Pay
 
-## Why Choose Vula-Pay?
+## Why Choose Vula & Pay?
 
 **Beautiful canvas portraits are important — but so is trusting the people making them.**
 
-We have designed the Vula-Pay experience around quality, convenience and confidence.
+We have designed the Vula & Pay experience around quality, convenience and confidence.
 
 ### Quality You Can See
 We take care when preparing, printing, wrapping and finishing every canvas. Your order should look good in a photograph and even better on your wall.
@@ -128,7 +128,7 @@ We take care when preparing, printing, wrapping and finishing every canvas. Your
 ### Open Before You Pay
 You should not have to fully pay for a custom product before you know what you are receiving.
 
-With Vula-Pay, your finished order comes to you first.
+With Vula & Pay, your finished order comes to you first.
 
 ### Pay Only When Satisfied
 Open the package. Look at the print. Check the finish.
@@ -136,7 +136,7 @@ Open the package. Look at the print. Check the finish.
 **If you are happy, then you pay.**
 
 ### Free Delivery
-We bring the finished product to you so you can experience the Vula-Pay promise from your own doorstep.
+We bring the finished product to you so you can experience the Vula & Pay promise from your own doorstep.
 
 ### No-Risk Change of Mind
 If you decide not to keep the product at delivery, we take it back at **zero cost to you**.
@@ -360,11 +360,11 @@ We will make and deliver your order. You will only pay after you open it and are
 
 ## Remove the Current R10 Upfront Deposit
 
-The new Vula-Pay proposition is:
+The new Vula & Pay proposition is:
 
 > **No upfront payment. Open first. Pay when satisfied.**
 
-Therefore the current **R10 Paystack confirmation deposit** conflicts with the main promise and should be removed if the business is committing to the Vula-Pay model.
+Therefore the current **R10 Paystack confirmation deposit** conflicts with the main promise and should be removed if the business is committing to the Vula & Pay model.
 
 ### Recommended Order Flow
 
@@ -387,13 +387,13 @@ Paystack can still be used for the **final payment**, but the payment should occ
 
 # 14. Trust / Guarantee Section
 
-## The Vula-Pay Promise
+## The Vula & Pay Promise
 
 ### You Should See What You Are Paying For
 
 Ordering a personalised product online can feel risky. A photograph can look one way on a screen and another way once printed.
 
-That is why Vula-Pay works differently.
+That is why Vula & Pay works differently.
 
 **We take the production risk. You make the final decision when the finished product is in front of you.**
 
@@ -455,7 +455,7 @@ If the existing numbers are outdated or cannot be confirmed, remove the counters
 
 # 17. Team Section
 
-The existing Team section should be removed unless it is updated with the real Vula-Pay team.
+The existing Team section should be removed unless it is updated with the real Vula & Pay team.
 
 If retained:
 
@@ -471,7 +471,7 @@ Avoid unrelated descriptions, trading references or percentage skill bars.
 
 # 18. Replace the Old Blog Section
 
-The existing blog/promotions are dated and include services that distract from the Vula-Pay proposition.
+The existing blog/promotions are dated and include services that distract from the Vula & Pay proposition.
 
 A better section would be:
 
@@ -499,7 +499,7 @@ Where photography services are available, customers can enquire about capturing 
 ## Frequently Asked Questions
 
 ### Do I have to pay before you make my canvas?
-**No.** Under the Vula-Pay model, you place your order without paying the full amount upfront.
+**No.** Under the Vula & Pay model, you place your order without paying the full amount upfront.
 
 ### When do I pay?
 When your canvas is delivered, you open and inspect it first. **You pay only when you are satisfied with the finished product.**
@@ -508,7 +508,7 @@ When your canvas is delivered, you open and inspect it first. **You pay only whe
 If you are not satisfied at delivery or you have changed your mind, **we take the product back at zero cost to you.**
 
 ### Is delivery free?
-**Yes, where your Vula-Pay delivery offer applies.** Make sure the website clearly states the actual delivery coverage before launch.
+**Yes, where your Vula & Pay delivery offer applies.** Make sure the website clearly states the actual delivery coverage before launch.
 
 ### Can I use my own photograph?
 Yes. Your own photograph can be turned into a personalised canvas.
@@ -548,10 +548,10 @@ Have a photograph in mind, need help choosing a size, or want a custom canvas?
 **+27 60 658 3828**
 
 ### Email
-Replace the old Ultimate Portraits & Canvas email with the new **Vula-Pay email address** once created.
+Replace the old Vula & Pay email with the new **Vula & Pay email address** once created.
 
 ### Social Media
-Replace the old Ultimate Portraits & Canvas handles with the new **Vula-Pay branded accounts** when available.
+Replace the old Vula & Pay handles with the new **Vula & Pay branded accounts** when available.
 
 ### Contact Form
 
@@ -565,7 +565,7 @@ Replace the old Ultimate Portraits & Canvas handles with the new **Vula-Pay bran
 **Send Message**
 
 ### Map / Physical Address
-Only display a map if customers genuinely need to visit a Vula-Pay studio, showroom or collection point.
+Only display a map if customers genuinely need to visit a Vula & Pay studio, showroom or collection point.
 
 If the business is primarily delivery-based, the map is not necessary and can be removed.
 
@@ -573,7 +573,7 @@ If the business is primarily delivery-based, the map is not necessary and can be
 
 # 21. Footer
 
-## Vula-Pay
+## Vula & Pay
 
 **Open it. Love it. Pay.**
 
@@ -594,23 +594,23 @@ Custom canvas portraits made from the moments that matter.
 ### Contact
 
 - **Call / WhatsApp:** +27 60 658 3828
-- **Email:** [new Vula-Pay email]
+- **Email:** [new Vula & Pay email]
 
 ### Footer Trust Line
 **No upfront payment · Open before you pay · Zero-cost return if you change your mind**
 
 ### Copyright
-**© Vula-Pay. All rights reserved.**
+**© Vula & Pay. All rights reserved.**
 
 ---
 
 # 22. Recommended SEO / Page Metadata
 
 ## Page Title
-**Vula-Pay | Custom Canvas Portraits — Open First, Pay When Happy**
+**Vula & Pay | Custom Canvas Portraits — Open First, Pay When Happy**
 
 ## Meta Description
-**Turn your favourite photographs into custom canvas portraits with Vula-Pay. We make and deliver your order first — open it, see it and only pay when you are satisfied.**
+**Turn your favourite photographs into custom canvas portraits with Vula & Pay. We make and deliver your order first — open it, see it and only pay when you are satisfied.**
 
 ## Suggested Search Phrases
 Use only where relevant to your actual delivery area:
@@ -632,19 +632,19 @@ Use only where relevant to your actual delivery area:
 Replace all old messages mentioning **Ultimate Potraits & Canvas**.
 
 ## General Enquiry
-> Hello Vula-Pay, I would like to know more about your custom canvas portraits.
+> Hello Vula & Pay, I would like to know more about your custom canvas portraits.
 
 ## Size Enquiry
-> Hello Vula-Pay, I need help choosing the right canvas size for my photograph.
+> Hello Vula & Pay, I need help choosing the right canvas size for my photograph.
 
 ## Custom Size
-> Hello Vula-Pay, I would like a custom-size canvas. Please help me with a quote.
+> Hello Vula & Pay, I would like a custom-size canvas. Please help me with a quote.
 
 ## Canvas Finish
-> Hello Vula-Pay, I would like to see examples of your canvas wrap and edge options.
+> Hello Vula & Pay, I would like to see examples of your canvas wrap and edge options.
 
 ## Order Help
-> Hello Vula-Pay, I would like help placing my canvas order.
+> Hello Vula & Pay, I would like help placing my canvas order.
 
 ---
 
@@ -652,7 +652,7 @@ Replace all old messages mentioning **Ultimate Potraits & Canvas**.
 
 Use these spellings consistently across the site:
 
-- **Vula-Pay**
+- **Vula & Pay**
 - **Portrait** — not “Potrait”
 - **Portraits** — not “Potraits”
 - **Beautiful** — not “Beutiful”
@@ -698,7 +698,7 @@ The refreshed site should remove or replace the following legacy material:
 - Outdated 2025 promotions
 - Flyer-design content unless still genuinely offered
 - Old location/map if it is not an active customer-facing location
-- R10 upfront Paystack deposit if using the true Vula-Pay promise
+- R10 upfront Paystack deposit if using the true Vula & Pay promise
 - Any wording saying “no upfront payment” while simultaneously charging an upfront deposit
 
 ---
@@ -709,8 +709,8 @@ For a clearer, conversion-focused site:
 
 1. **Navbar**
 2. **Hero — Open it. Love it. Then pay.**
-3. **How Vula-Pay Works**
-4. **The Vula-Pay Promise / Why Choose Us**
+3. **How Vula & Pay Works**
+4. **The Vula & Pay Promise / Why Choose Us**
 5. **Canvas Sizes & Prices**
 6. **Canvas Types & Customisation**
 7. **Our Work / Portfolio**
@@ -727,7 +727,7 @@ The old Team, Skills and Blog sections are not essential to the core buying jour
 
 If you want a much cleaner homepage, this is the core message to keep:
 
-## Vula-Pay
+## Vula & Pay
 # Open it. Love it. Then pay.
 
 **We turn your favourite photographs into beautiful canvas portraits and deliver them to your door. No upfront payment. Open your order first and only pay when you are satisfied.**
@@ -750,7 +750,7 @@ Inspect it first. If you are happy, you pay.
 
 > **Changed your mind? No problem. We take it back at zero cost to you.**
 
-### Why Vula-Pay?
+### Why Vula & Pay?
 **Quality you can see. A product you can touch. Payment only when you are happy.**
 
 ### Final CTA
