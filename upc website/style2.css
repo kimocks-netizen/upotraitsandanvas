@@ -31,6 +31,12 @@ Version: 1.0
     background-color: rgba(0, 0, 0, 0.85);
 }
 
+/* Keep logo visible on dark navbar */
+.mainmenu-area .navbar-brand img {
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s;
+}
+
 .mainmenu-area #mainmenu ul.nav.navbar-nav li a {
     color: #ffffff;
     background: none;
